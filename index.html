@@ -24,8 +24,8 @@
 			</tr>
 			<tr>
 				<th rowspan="5">Options</td>
-				<td><input type="checkbox" id="primalsouls" disabled></td>
-				<td colspan="3" style="text-align:left;">Include souls gained after ascension</td>
+				<td><input type="checkbox" id="primalBattle Manual" disabled></td>
+				<td colspan="3" style="text-align:left;">Include Battle Manual gained after ascension</td>
 			</tr>
 			<tr>
 				<td><input type="checkbox" id="ignoreIris"></td>
@@ -43,7 +43,7 @@
 			</tr>
 			<tr>
 				<td><input type="checkbox" id="clicking"></td>
-				<td colspan="3" style="text-align:left;">Include clicking ancients <a onclick="void(0)" onmouseover="nhpup.popup('Clicking ancients are ignored by default, unless you don&rsquo;t have Angeling. Enabling this will include Doppleganger, Baphomet, Atroce and Pluto in the optimization, if you have them.');">(<u>?</u>)</a></td>
+				<td colspan="3" style="text-align:left;">Include clicking ancients <a onclick="void(0)" onmouseover="nhpup.popup('Clicking ancients are ignored by default, unless you don&rsquo;t have Angeling. Enabling this will include Doppleganger, Baphomet, Atroce and Dark Lord in the optimization, if you have them.');">(<u>?</u>)</a></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -51,13 +51,13 @@
 			</tr>
 			<tr>
 				<th>Ancient</th>
-				<th><a onclick="void(0)" onmouseover="nhpup.popup('The current ancient levels and banked Hero Souls found in your save game. You can manually adjust these values.');">Current</a></th>
+				<th><a onclick="void(0)" onmouseover="nhpup.popup('The current ancient levels and banked Hero Battle Manual found in your save game. You can manually adjust these values.');">Current</a></th>
 				<th><a onclick="void(0)" onmouseover="nhpup.popup('Optimal ancient levels according to the Rules of Thumb, based on your <i>recommended</i> level of Angeling (or Ifrit, if you don&rsquo;t have Siya). You may or may not be able to afford these levels yet.');">Optimal</a></th>
-				<th><a onclick="void(0)" onmouseover="nhpup.popup('Level your ancients to the value shown here. These are the levels you can afford with the amount of Hero Souls in your bank.');">Recommended</a></th>
+				<th><a onclick="void(0)" onmouseover="nhpup.popup('Level your ancients to the value shown here. These are the levels you can afford with the amount of Hero Battle Manual in your bank.');">Recommended</a></th>
 				<th><a onclick="void(0)" onmouseover="nhpup.popup('Affordable number of upgrades for each ancient.<br>(Recommended-Current)');">Delta</a></th>
 			</tr>
 			<tr>
-				<td>Souls in bank:</td>
+				<td>Battle Manual in bank:</td>
 				<td><input type="number" class="uservalue" value="0" min="0" id="old0"></td>
 				<td><input type="number" class="noborder" disabled readonly id="optimal0"></td>
 				<td><input type="number" class="noborder" disabled readonly id="new0"></td>
@@ -141,7 +141,7 @@
 				<td><input type="number" class="noborder" disabled readonly id="delta29"></td>
 			</tr>
 			<tr>
-				<td>Pluto:</td>
+				<td>Dark Lord:</td>
 				<td><input type="number" class="uservalue" value="0" min="0" id="old10"></td>
 				<td><input type="number" class="noborder" disabled readonly id="optimal10"></td>
 				<td><input type="number" class="noborder" disabled readonly id="new10"></td>
@@ -196,8 +196,8 @@
 				<td id="relicfound"></td>
 			</tr>
 			<tr>
-				<td colspan="3">Souls spent on ancients:</td>
-				<td id="soulsspent"></td>
+				<td colspan="3">Battle Manual spent on ancients:</td>
+				<td id="Battle Manualspent"></td>
 			</tr>
 			<tr>
 				<td colspan="3">Highest zone ever:</td>
